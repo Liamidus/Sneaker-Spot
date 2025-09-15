@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details - Sneaker Spot</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <!--Header-->
+    <section>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="/images/logo.png" alt="store logo" width="125px" />
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="/home.html">Home</a></li>
+              <li><a href="/products.html">Products</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="/account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="/cart.html"
+            ><img
+              src="/images/cart.png"
+              alt="shopping cart"
+              width="30px"
+              height="30px"
+          /></a>
+          <img
+            class="menu-icon"
+            src="/images/menu.png"
+            alt="menu"
+            onclick="menutoggle()"
+          />
+        </div>
+      </div>
+    </section>
+    <!--single product details-->
+    <section>
+        <div class="small-container single-product" data-id="21">
+            <div class="row">
+                <div class="col-2"><img src="/images/product-21.jpg" alt="" width="100%" id="ProductImg">
+                
+                </div>
+                <div class="col-2">
+                    <p>Home / Shoes</p>
+                    <h1 id="product-title">Tangerine Running Shoes</h1>
+                    <h4 id="product-price">$159.99</h4>
+                    <select id="product-size">
+                        <option value="" disabled selected>Select Size</option>
+                        <option value="Small">Mens 9"</option>
+                        <option value="Medium">Mens 10"</option>
+                        <option value="Large">Mens 11"</option>
+                        <option value="XLarge">Mens 12"</option>
+                        <option value="XXLarge">Mens 13"</option>
+                    </select>
+                    <input type="number" id="product-quantity" value="1" min="1">
+                    <a href="/cart.html" class="btn" id="add-to-cart">Add to Cart</a>
+                    <h3>Product Details <i class="fa fa-ident"></i></h3>
+                    <br/>
+                    <p>Step into luxury with Tangerine Running Shoes, designed for top-tier performance and style. Featuring advanced cushioning, a breathable upper, and a durable outsole, they deliver unmatched comfort and support for every stride. Bold, sleek, and high-end, these running shoes are perfect for athletes who demand both function and fashion.</p>
+                </div>
+            </div>
+        </div>
+    <!--title--> 
+    <div class="small-container"id="sort">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <a href="/products.html"><p>View More</p></a>
+        </div>
+    </div>
+      <div class="small-container for-sale">
+          <div id="products-row"
+                data-show-description="true"
+                data-show-price="true"
+                data-show-rating="true"
+                data-show-ids="14,15,16,17">
+        </div>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <section>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios</p>
+              <div class="app-logo">
+                <img src="/images/play-store.png" alt="" /><img
+                  src="/images/app-store.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="/images/logo-white.png" alt="" />
+              <p>
+                Our Purpose is to sustainably make the pleasure and benefits of
+                sports Accessible to Everyone
+              </p>
+            </div>
+            <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                <li>Coupons</li>
+                <li>Blog Posts</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow Us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">Copyright 2025 - Liam O'Rourke</p>
+        </div>
+      </div>
+    </section>
+
+    <!--js-->
+    <script src="/js/app.js"></script>
+    <script>
+        
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+
+      const sortSelect = document.getElementById("sort");
+
+      function updateOptions() {
+        for (let i = 0; i < sortSelect.options.length; i++) {
+          let opt = sortSelect.options[i];
+
+          // Reset everything back to original text first
+          if (!opt.dataset.original) {
+            opt.dataset.original = opt.text; // save original full text (with prefix)
+          }
+          opt.text = opt.dataset.original;
+        }
+
+        // Strip "Sort by: " from all *non-selected* options
+        for (let i = 0; i < sortSelect.options.length; i++) {
+          let opt = sortSelect.options[i];
+          if (i !== sortSelect.selectedIndex) {
+            opt.text = opt.text.substring(9); // remove "Sort by: "
+          }
+        }
+      }
+        //product gallery
+      
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        }
+
+      // Run on load
+      updateOptions();
+
+      // Update whenever user changes selection
+      sortSelect.addEventListener("change", updateOptions);
+
+      
+    </script>
+    
+  </body>
+</html>
