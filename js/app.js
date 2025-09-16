@@ -284,7 +284,7 @@ const productsArray = [
     title: "Essentials While Logo Shirt",
     description: "Fashionable and Comfortable.",
     price: 28.75,
-    image: "/images/product-27.jpg",
+    image: "/images/product-27 .jpg",
     rating: 3,
     category: "Shirt",
     link: "/product-details/id-27.html"
