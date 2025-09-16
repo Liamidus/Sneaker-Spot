@@ -22,120 +22,120 @@ const productsArray = [
     title: "Red T-Shirt",
     description: "Comfortable and stylish red t-shirt.",
     price: 24.99, // optional
-    image: "/images/product-1.jpg",
+    image: "images/product-1.jpg",
     rating: 4.5, // decimal allowed, e.g., 4.5
     category: "T-Shirt",
-    link: "/product-details/id-1.html"
+    link: "id-1.html"
   },
   {
     id: 2,
     title: "HRX Running Shoes",
     description: "Lightweight running shoes for daily workouts.",
     price: 69.99,
-    image: "/images/product-2.jpg",
+    image: "images/product-2.jpg",
     rating: 4.5,
     category: "Shoes",
-    link: "/product-details/id-2.html"
+    link: "id-2.html"
   },
   {
     id: 3,
     title: "Grey Sweatpants",
     description: "Cozy and durable sweatpants.",
     price: 34.95,
-    image: "/images/product-3.jpg",
+    image: "images/product-3.jpg",
     rating: 5,
     category: "Pants",
-    link: "/product-details/id-3.html"
+    link: "id-3.html"
   },
   {
     id: 4,
     title: "Blue Polo",
     description: "Classic blue polo shirt.",
     price: 69.99,
-    image: "/images/product-4.jpg",
+    image: "images/product-4.jpg",
     rating: 4.5,
     category: "Shirts",
-    link: "/product-details/id-4.html"
+    link: "id-4.html"
   },
   {
     id: 5,
     title: "Dirt Magnets",
     description: "Durable and rugged sneakers.",
     price: 99.66,
-    image: "/images/product-5.jpg",
+    image: "images/product-5.jpg",
     rating: 0.5,
     category: "Shoes",
-    link: "/product-details/id-5.html"
+    link: "id-5.html"
   },
   {
     id: 6,
     title: "Black T-Shirt",
     description: "Soft black t-shirt with logo.",
     price: 29.99,
-    image: "/images/product-6.jpg",
+    image: "images/product-6.jpg",
     rating: 3.5,
     category: "T-Shirt",
-    link: "/product-details/id-6.html"
+    link: "id-6.html"
   },
   {
     id: 7,
     title: "HRX Ankle Socks",
     description: "Comfortable ankle socks for sports.",
     price: 14.99,
-    image: "/images/product-7.jpg",
+    image: "images/product-7.jpg",
     rating: 4,
     category: "Accessories",
-    link: "/product-details/id-7.html"
+    link: "id-7.html"
   },
   {
     id: 8,
     title: "Fossil 10:10 AM",
     description: "Premium Fossil wristwatch.",
     price: 1010.49,
-    image: "/images/product-8.jpg",
+    image: "images/product-8.jpg",
     rating: 4.5,
     category: "Watches",
-    link: "/product-details/id-8.html"
+    link: "id-8.html"
   },
   {
     id: 9,
     title: "Roadster C2",
     description: "Stylish Roadster C2 sneakers.",
     price: 149.99,
-    image: "/images/product-9.jpg",
+    image: "images/product-9.jpg",
     rating: 4,
     category: "Shoes",
-    link: "/product-details/id-9.html"
+    link: "id-9.html"
   },
   {
     id: 10,
     title: "Red X Running Shoes",
     description: "Performance running shoes.",
     price: 49.99,
-    image: "/images/product-10.jpg",
+    image: "images/product-10.jpg",
     rating: 2.5,
     category: "Shoes",
-    link: "/product-details/id-10.html"
+    link: "id-10.html"
   },
   {
     id: 11,
     title: "Grey Lazy Boys",
     description: "Comfortable loungewear shoes.",
     price: 29.99,
-    image: "/images/product-11.jpg",
+    image: "images/product-11.jpg",
     rating: 3,
     category: "Shoes",
-    link: "/product-details/id-11.html"
+    link: "id-11.html"
   },
   {
     id: 12,
     title: "Nike Black Sweatpants",
     description: "Premium sweatpants for sports and comfort.",
     price: 79.99,
-    image: "/images/product-12.jpg",
+    image: "images/product-12.jpg",
     rating: 3.5,
     category: "Pants",
-    link: "/product-details/id-12.html"
+    link: "id-12.html"
   }
   ,
   {
@@ -143,10 +143,10 @@ const productsArray = [
     title: "Bient Et Vous T-Shirt",
     description: "Soft white t-shirt with logo.",
     price: 45.99,
-    image: "/images/product-13.jpg",
+    image: "images/product-13.jpg",
     rating: 4.5,
     category: "T-Shirt",
-    link: "/product-details/id-13.html"
+    link: "id-13.html"
   }
   ,
   {
@@ -154,150 +154,150 @@ const productsArray = [
     title: "Meina Boots",
     description: "Durable boots for daily work.",
     price: 79.99,
-    image: "/images/product-14.jpg",
+    image: "images/product-14.jpg",
     rating: 3.7,
     category: "Shoes",
-    link: "/product-details/id-14.html"
+    link: "id-14.html"
   },
   {
     id: 15,
     title: "Child Nike Sneakers",
     description: "Lightweight comfortable shoes for children.",
     price: 22.99,
-    image: "/images/product-15.jpg",
+    image: "images/product-15.jpg",
     rating: 4.5,
     category: "Shoes",
-    link: "/product-details/id-15.html"
+    link: "id-15.html"
   },
   {
     id: 16,
     title: "Superhero Shoes",
     description: "Super shoes that will make you feel super.",
     price: 55.99,
-    image: "/images/product-16.jpg",
+    image: "images/product-16.jpg",
     rating: 5,
     category: "Shoes",
-    link: "/product-details/id-16.html"
+    link: "id-16.html"
   },
   {
     id: 17,
     title: "Reebok Running Shoes",
     description: "Lightweight running shoes for daily workouts.",
     price: 65.99,
-    image: "/images/product-17.jpg",
+    image: "images/product-17.jpg",
     rating: 4.0,
     category: "Shoes",
-    link: "/product-details/id-17.html"
+    link: "id-17.html"
   },
   {
     id: 18,
     title: "Meindl Kids Running Shoes",
     description: "Lightweight running shoes for playing in the park.",
     price: 38.99,
-    image: "/images/product-18.jpg",
+    image: "images/product-18.jpg",
     rating: 3,
     category: "Shoes",
-    link: "/product-details/id-18.html"
+    link: "id-18.html"
   },
   {
     id: 19,
     title: "Escalante Running Shoes",
     description: "Lightweight running shoes for daily workouts.",
     price: 129.99,
-    image: "/images/product-19.jpg",
+    image: "images/product-19.jpg",
     rating: 4.5,
     category: "Shoes",
-    link: "/product-details/id-19.html"
+    link: "id-19.html"
   },
   {
     id: 20,
     title: "Gel-Nimbus 21 Sneakers",
     description: "Lightweight running shoes for daily workouts.",
     price: 159.99,
-    image: "/images/product-20.jpg",
+    image: "images/product-20.jpg",
     rating: 5,
     category: "Shoes",
-    link: "/product-details/id-20.html"
+    link: "id-20.html"
   },
   {
     id: 21,
     title: "Tangerine Running Shoes",
     description: "Lightweight running shoes for daily workouts.",
     price: 159.99,
-    image: "/images/product-21.jpg",
+    image: "images/product-21.jpg",
     rating: 4.5,
     category: "Shoes",
-    link: "/product-details/id-21.html"
+    link: "id-21.html"
   },
   {
     id: 22,
     title: "Target Jersey",
     description: "Represent target and support the team.",
     price: 49.99,
-    image: "/images/product-22.jpg",
+    image: "images/product-22.jpg",
     rating: 4.5,
     category: "Shirt",
-    link: "/product-details/id-22.html"
+    link: "id-22.html"
   },
   {
     id: 23,
     title: "Red Hightop Light-up Sneakers",
     description: "Lightweight running shoes for daily workouts.",
     price: 119.99,
-    image: "/images/product-23.jpg",
+    image: "images/product-23.jpg",
     rating: 3.5,
     category: "Shoes",
-    link: "/product-details/id-23.html"
+    link: "id-23.html"
   },
   {
     id: 24,
     title: "Black Hightop Light-up Sneakers",
     description: "Lightweight running shoes for daily workouts.",
     price: 119.99,
-    image: "/images/product-24.jpg",
+    image: "images/product-24.jpg",
     rating: 4.2,
     category: "Shoes",
-    link: "/product-details/id-24.html"
+    link: "id-24.html"
   },
   {
     id: 25,
     title: "Original Leather Dress Shoes",
     description: "crafted from premium leather for a polished, sophisticated look.",
     price: 110.99,
-    image: "/images/product-25.jpg",
+    image: "images/product-25.jpg",
     rating: 2.5,
     category: "Shoes",
-    link: "/product-details/id-25.html"
+    link: "id-25.html"
   },
   {
     id: 26,
     title: "Kids Converse Sneakers",
     description: "Lightweight running shoes for playing in.",
     price: 29.99,
-    image: "/images/product-26.jpg",
+    image: "images/product-26.jpg",
     rating: 2.5,
     category: "Shoes",
-    link: "/product-details/id-26.html"
+    link: "id-26.html"
   },
   {
     id: 27,
     title: "Essentials While Logo Shirt",
     description: "Fashionable and Comfortable.",
     price: 28.75,
-    image: "/images/product-27 .jpg",
+    image: "images/product-27 .jpg",
     rating: 3,
     category: "Shirt",
-    link: "/product-details/id-27.html"
+    link: "id-27.html"
   },
   {
     id: 28,
     title: "Legendary While Logo Shirt",
     description: "Fashionable and Comfortable.",
     price: 32.49,
-    image: "/images/product-28.jpg",
+    image: "images/product-28.jpg",
     rating: 3.5,
     category: "Shirt",
-    link: "/product-details/id-28.html"
+    link: "id-28.html"
   }
 ];
 

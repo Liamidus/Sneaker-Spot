@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All Products - Sneaker Spot</title>
+    <title>Product Details - Sneaker Spot</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,33 +52,47 @@
         </div>
       </div>
     </section>
-    <!--Featured Products-->
+    <!--single product details-->
     <section>
-      <div class="small-container for-sale">
+        <div class="small-container single-product" data-id="22">
+            <div class="row">
+                <div class="col-2"><img src="images/product-22.jpg" alt="" width="100%" id="ProductImg">
+                
+                </div>
+                <div class="col-2">
+                    <p>Home / Shirt</p>
+                    <h1 id="product-title">Target Jersey</h1>
+                    <h4 id="product-price">$49.99</h4>
+                    <select id="product-size">
+                        <option value="" disabled selected>Select Size</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="XLarge">XLarge</option>
+                        <option value="XXLarge">XXLarge</option>
+                    </select>
+                    <input type="number" id="product-quantity" value="1" min="1">
+                    <a href="cart.html" class="btn" id="add-to-cart">Add to Cart</a>
+                    <h3>Product Details <i class="fa fa-ident"></i></h3>
+                    <br/>
+                    <p>Show your team spirit with the Target Jersey, designed for comfort and authentic style. Made from breathable, lightweight fabric, it keeps you cool during games or casual wear. Featuring a classic fit and bold team colors, it’s perfect for fans, workouts, or everyday sporty looks.</p>
+                </div>
+            </div>
+        </div>
+    <!--title--> 
+    <div class="small-container"id="sort">
         <div class="row row-2">
-          <h2>All Products</h2>
-          <select name="sort" id="sort">
-            <option value="featured">Sort by: Featured</option>
-            <option value="price">Sort by: Price: Low to High</option>
-            <option value="popularity">Sort by: Price: High to Low</option>
-            <option value="rating">Sort by: Rating</option>
-            <option value="sale">Sort by: New Arrivals</option>
-          </select>
+            <h2>Related Products</h2>
+            <a href="products.html"><p>View More</p></a>
         </div>
-        <div
-          class="row"
-          id="products-row"
-          data-show-description="false"
-          data-show-price="true"
-          data-show-rating="true"
-        >
-          >
+    </div>
+      <div class="small-container for-sale">
+          <div id="products-row"
+                data-show-description="true"
+                data-show-price="true"
+                data-show-rating="true"
+                data-show-ids="18,19,20,21">
         </div>
-        <div class="page-btn">
-          <span data-page="1">1</span>
-          <span data-page="2">2</span>
-          <span data-page="3">3</span>
-          <span data-page="next">&#8594;</span>
         </div>
       </div>
     </section>
@@ -132,6 +146,19 @@
     <!--js-->
     <script src="js/app.js"></script>
     <script>
+        
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+
       const sortSelect = document.getElementById("sort");
 
       function updateOptions() {
@@ -153,12 +180,36 @@
           }
         }
       }
+        //product gallery
+      
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        }
 
       // Run on load
       updateOptions();
 
       // Update whenever user changes selection
       sortSelect.addEventListener("change", updateOptions);
+
+      
     </script>
+    
   </body>
 </html>
